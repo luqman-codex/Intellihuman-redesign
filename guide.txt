@@ -1,0 +1,142 @@
+Skill Profiles – Developer Handover Document
+This document is the single source of truth for implementing Skill Profiles. Read from top to bottom. Nothing is implied. Do not guess.
+1. Two Distinct Skill Profile Types
+1.1 Primary Skill Profile
+A Primary Skill Profile represents a real person and their current role.
+
+Characteristics:
+- Assigned to a person
+- One primary profile per user
+- Used for Talent Marketplace and Role Mobility Advisor
+- Contains skills, skill importance, and learning stages
+
+
+1.2 Secondary Skill Profile (Planning Profile)
+A Secondary Skill Profile represents a role or planning scenario, not a person.
+
+Characteristics:
+- Not assigned to a person
+- Used for planning, hiring discussions, and what-if scenarios
+- Contains skills and skill importance only
+- Never includes learning stages
+
+
+2. Data Ownership vs Representation
+Every profile has two concepts:
+
+1. Created by – who made the profile
+2. Represents – who or what the profile is about
+
+Primary Profile:
+- Created by user
+- Represents the same user
+
+Secondary Profile:
+- Created by user
+- Represents no person (planning only)
+3. Required Fields
+SkillProfile fields:
+- id
+- profile_type (PRIMARY | SECONDARY)
+- created_by_user_id (always required)
+- assigned_user_id:
+    - PRIMARY → must be user id
+    - SECONDARY → must be null
+- is_discoverable (PRIMARY only)
+
+
+4. Visibility Rules
+4.1 Primary Profile Visibility
+Primary profiles can be visible or hidden.
+
+Visible:
+- Appears in Talent Marketplace
+- Appears in Role Mobility Advisor
+
+Hidden:
+- Profile still exists
+- User does NOT appear in Talent Marketplace
+- User does NOT appear in Role Mobility Advisor
+
+
+4.2 Secondary Profile Visibility
+Secondary profiles are always private.
+
+- Never discoverable
+- Never appear in Talent Marketplace
+- Never appear in Role Mobility Advisor
+
+
+5. Learning Stages
+Learning stages exist ONLY for Primary profiles.
+
+- Learning
+- Growing
+- Strong
+
+Rules:
+- Always private by default
+- Never visible to organization automatically
+
+
+6. Sharing Rules
+6.1 Sharing – Primary Profile
+Primary profiles allow sharing of learning stages only.
+
+When shared via email, recipient can see:
+- Profile type = Primary
+- Skills
+- Learning stages
+
+Recipient cannot see:
+- Discoverability status
+- Talent Marketplace eligibility
+- Role Mobility eligibility
+
+
+6.2 Sharing – Secondary Profile
+Secondary profiles allow sharing of the full profile.
+
+Recipient can see:
+- Profile type = Secondary
+- Skills
+- Skill importance
+
+Learning stages do not exist for secondary profiles.
+7. Discoverability Logic (Must Be Enforced)
+A profile is discoverable ONLY if:
+
+profile_type = PRIMARY AND is_discoverable = true
+
+All other cases must be blocked, including all secondary profiles.
+8. Save Behavior
+8.1 Saving Primary Profile
+Save action may:
+- Update is_discoverable
+- Create or update learning-stage sharing records
+
+Save action must NOT:
+- Modify skills
+- Modify skill importance
+- Modify learning stages
+
+
+8.2 Saving Secondary Profile
+Save action may:
+- Create sharing records
+
+Save action must NOT:
+- Accept learning stages
+- Enable discoverability
+
+
+9. Things That Must Never Happen
+- Secondary profile appearing in Talent Marketplace
+- Learning stages visible without explicit sharing
+- Planning profile treated as a person
+- Sharing revealing discoverability status
+- Secondary profile having assigned_user_id
+
+
+10. Final System Truth
+Primary profiles belong to people and may be hidden from discovery, but learning stages are always private unless explicitly shared. Secondary profiles are planning artifacts, always private, never discoverable, contain no learning stages, and can be shared only as full profiles.
