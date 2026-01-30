@@ -36,7 +36,7 @@ export function Footer() {
             <img
               src="/logo.png"
               alt="IntelliHuman Logo"
-              className="h-8 w-auto object-contain"
+              className="h-8 w-auto object-contain drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)] contrast-110"
             />
           </Link>
 

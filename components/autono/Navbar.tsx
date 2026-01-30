@@ -51,9 +51,7 @@ export function Navbar({ variant = 'light' }: NavbarProps) {
               alt="IntelliHuman Logo"
               width={180}
               height={50}
-              className={`h-8 w-auto object-contain transition-all duration-300 ${
-                showDarkBg ? 'drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]' : ''
-              }`}
+              className="h-8 w-auto object-contain transition-all duration-300 drop-shadow-[0_2px_8px_rgba(0,0,0,0.6)] contrast-110"
             />
           </Link>
 
