@@ -1,13 +1,21 @@
 "use client"
 
+import Image from 'next/image'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 export function WhyAutono() {
   return (
-    <section
-      className="relative min-h-screen bg-cover bg-center bg-no-repeat bg-fixed"
-      style={{ backgroundImage: `url('/Assets/page1/page1-section4.jpg')` }}
-    >
+    <section className="relative min-h-screen">
+      {/* Background Image with Next.js optimization */}
+      <Image
+        src="/Assets/page1/page1-section4.jpg"
+        alt="Manufacturing facility"
+        fill
+        className="object-cover object-center"
+        sizes="100vw"
+        quality={85}
+      />
+
       {/* Content overlay */}
       <div className="relative z-10 min-h-screen flex items-center">
         <div className="w-full px-4 lg:px-8">

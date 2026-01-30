@@ -1,6 +1,18 @@
+import type { Metadata } from 'next'
+import Image from 'next/image'
 import { ArrowRight } from 'lucide-react'
 import { Navbar } from "@/components/autono/Navbar"
 import { Footer } from "@/components/autono/Footer"
+
+export const metadata: Metadata = {
+  title: 'Careers | AUTONO - Join Our Team',
+  description: 'Join Autono and help shape the future of autonomous mobility. Explore exciting career opportunities in engineering, AI, and more.',
+  openGraph: {
+    title: 'Careers | AUTONO - Join Our Team',
+    description: 'Join Autono and help shape the future of autonomous mobility.',
+    type: 'website',
+  },
+}
 
 const jobOpenings = [
   {
@@ -73,10 +85,13 @@ export default function CareersPage() {
 
             {/* Building Image */}
             <div className="flex justify-center lg:justify-end">
-              <img
+              <Image
                 src="/Assets/careers/career-2.png"
                 alt="San Francisco Office Buildings"
+                width={700}
+                height={500}
                 className="w-full max-w-lg lg:max-w-xl xl:max-w-2xl h-auto object-contain"
+                priority
               />
             </div>
           </div>
@@ -109,11 +124,13 @@ export default function CareersPage() {
 
             {/* Right Side - Image */}
             <div className="relative h-[400px] lg:h-auto">
-              <img
+              <Image
                 src="/Assets/careers/career-3.png"
                 alt="Road with light trails"
-                className="absolute inset-0 w-full h-full lg:h-[760px] object-cover"
+                fill
+                className="object-cover"
                 style={{ objectPosition: '50% 50%' }}
+                sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
           </div>

@@ -43,56 +43,16 @@ export function Services() {
             </button>
           </div>
 
-          {/* Right - Car Image with Radar Effect - larger */}
+          {/* Right - Car Image */}
           <div className="relative flex items-center justify-center lg:justify-end py-10 lg:-mr-10">
-            {/* Circular radar/sensor rings */}
-            <div className="absolute inset-0 flex items-center justify-center lg:justify-end lg:pr-20">
-              {/* Outer dashed circle */}
-              <svg className="absolute w-[450px] h-[450px] lg:w-[550px] lg:h-[550px]" viewBox="0 0 500 500">
-                <circle
-                  cx="250"
-                  cy="250"
-                  r="200"
-                  fill="none"
-                  stroke="#e0e0e0"
-                  strokeWidth="1"
-                  strokeDasharray="8 8"
-                />
-              </svg>
-              {/* Inner colored arc */}
-              <svg className="absolute w-[380px] h-[380px] lg:w-[480px] lg:h-[480px]" viewBox="0 0 420 420">
-                <circle
-                  cx="210"
-                  cy="210"
-                  r="160"
-                  fill="none"
-                  stroke="#f5d5c0"
-                  strokeWidth="2"
-                  strokeDasharray="4 6"
-                  opacity="0.8"
-                />
-                {/* Accent arc segment */}
-                <path
-                  d="M 370 210 A 160 160 0 0 1 210 370"
-                  fill="none"
-                  stroke="#e8a87c"
-                  strokeWidth="2"
-                  opacity="0.6"
-                />
-              </svg>
-            </div>
-
-            {/* Car Image - larger */}
-            <div className="relative z-10">
-              <Image
-                src="/Assets/page1/page1-section3.jpg"
-                alt="Autonomous Driving Vehicle"
-                width={900}
-                height={720}
-                className="w-full max-w-xl lg:max-w-2xl xl:max-w-3xl h-auto object-contain"
-                priority
-              />
-            </div>
+            <Image
+              src="/Assets/page1/page1-section3.jpg"
+              alt="Autonomous Driving Vehicle"
+              width={900}
+              height={720}
+              className="w-full max-w-xl lg:max-w-2xl xl:max-w-3xl h-auto object-contain"
+              priority
+            />
           </div>
         </div>
 

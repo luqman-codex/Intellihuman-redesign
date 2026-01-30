@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image'
 import { useEffect, useState, useRef } from 'react'
 
 const stats = [
@@ -66,10 +67,13 @@ export function Stats() {
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           {/* Robot Arm Image - flush to left edge */}
           <div className="relative">
-            <img
+            <Image
               src="/Assets/page1/page1-section5.jpg"
               alt="Robot Arm"
+              width={1200}
+              height={800}
               className="w-full h-auto max-w-3xl lg:max-w-4xl -ml-4 lg:-ml-6"
+              sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </div>
 
