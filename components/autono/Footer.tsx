@@ -33,9 +33,11 @@ export function Footer() {
         <div className="max-w-6xl mx-auto">
           {/* Logo */}
           <Link href="/" className="inline-block mb-16">
-            <span className="text-base font-light tracking-[0.3em] text-black">
-              AUTONO
-            </span>
+            <img
+              src="/logo.png"
+              alt="IntelliHuman Logo"
+              className="h-8 w-auto object-contain"
+            />
           </Link>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[auto_auto_1fr] gap-x-8 lg:gap-x-16 gap-y-12">
@@ -79,7 +81,7 @@ export function Footer() {
                 Subscribe
               </h4>
               <p className="text-base font-light text-black mb-8">
-                Sign up to receive Autono news and updates.
+                Sign up to receive IntelliHuman news and updates.
               </p>
               <form onSubmit={handleSubscribe}>
                 <div className="mb-6">
@@ -123,10 +125,7 @@ export function Footer() {
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
             <p className="text-sm font-light text-black">
-              © 2035 by Autono. Powered and secured by{' '}
-              <a href="#" className="underline hover:text-black/70 transition-colors duration-300">
-                Wix
-              </a>
+              © 2025 IntelliHuman. All rights reserved.
             </p>
             {/* Social Links */}
             <div className="flex items-center gap-8">
