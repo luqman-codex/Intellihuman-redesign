@@ -5,7 +5,7 @@ export function Hero() {
     <section
       id="home"
       className="relative min-h-screen flex flex-col items-center justify-start overflow-hidden bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: `url('/Hompeage/hero-car-1.avif')` }}
+      style={{ backgroundImage: `url('/Assets/page1/page1-section1.jpg')` }}
     >
       {/* Dark gradient from bottom to top - strong at road level */}
       <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 via-20% to-transparent to-50%" />

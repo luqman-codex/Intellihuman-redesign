@@ -67,7 +67,7 @@ export function Stats() {
           {/* Robot Arm Image - flush to left edge */}
           <div className="relative">
             <img
-              src="/Assets/sec-8.png"
+              src="/Assets/page1/page1-section5.jpg"
               alt="Robot Arm"
               className="w-full h-auto max-w-3xl lg:max-w-4xl -ml-4 lg:-ml-6"
             />

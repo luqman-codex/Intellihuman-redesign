@@ -85,7 +85,7 @@ export function Services() {
             {/* Car Image - larger */}
             <div className="relative z-10">
               <Image
-                src="/Assets/sec-3.png"
+                src="/Assets/page1/page1-section3.jpg"
                 alt="Autonomous Driving Vehicle"
                 width={900}
                 height={720}
@@ -101,7 +101,7 @@ export function Services() {
           {/* Left - Dashboard Image */}
           <div className="relative flex items-center justify-center lg:justify-start lg:ml-8">
             <Image
-              src="/Assets/sec-4.png"
+              src="/Assets/page1/page1-section3.jpg"
               alt="Real-Time Information Dashboard"
               width={900}
               height={650}
@@ -153,7 +153,7 @@ export function Services() {
           {/* Right - Car Image with Sensors */}
           <div className="relative flex items-center justify-center lg:justify-end lg:-mr-10">
             <Image
-              src="/Assets/sec-5.png"
+              src="/Assets/page1/page1-section3.jpg"
               alt="Perception Enabled Vehicle"
               width={900}
               height={720}

@@ -1,37 +1,10 @@
 "use client"
 
 import Image from 'next/image'
-import { useEffect, useRef, useState } from 'react'
 
 export function Vision() {
-  const sectionRef = useRef<HTMLElement>(null)
-  const [carOffset, setCarOffset] = useState(0)
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (!sectionRef.current) return
-
-      const rect = sectionRef.current.getBoundingClientRect()
-      const windowHeight = window.innerHeight
-
-      // Check if section is in view
-      if (rect.top < windowHeight && rect.bottom > 0) {
-        // Calculate how far into the section we've scrolled
-        const scrollProgress = (windowHeight - rect.top) / (windowHeight + rect.height)
-        // Convert to horizontal movement (-50px to +50px range)
-        const offset = (scrollProgress - 0.5) * 100
-        setCarOffset(offset)
-      }
-    }
-
-    window.addEventListener('scroll', handleScroll)
-    handleScroll() // Initial call
-
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
-
   return (
-    <section ref={sectionRef} id="vision" className="py-20 lg:py-28 bg-black overflow-hidden">
+    <section id="vision" className="py-20 lg:py-28 bg-black overflow-hidden">
       <div className="w-full px-4 lg:px-8">
         <div className="grid lg:grid-cols-[1fr_1.5fr] gap-8 lg:gap-12 items-center">
           {/* Content Side */}
@@ -54,15 +27,14 @@ export function Vision() {
             </div>
           </div>
 
-          {/* Image Side - with scroll-based movement, much larger */}
-          <div className="relative flex justify-center lg:justify-end lg:-mr-20">
+          {/* Image Side */}
+          <div className="relative flex justify-center lg:justify-end">
             <Image
-              src="/Assets/sec-2.png"
+              src="/Assets/page1/page1-section2.jpg"
               alt="Autonomous Vehicle Vision"
               width={1000}
               height={850}
-              className="w-full max-w-3xl lg:max-w-4xl h-auto object-contain scale-125 lg:scale-150 transition-transform duration-100 ease-out"
-              style={{ transform: `translateX(${carOffset}px)` }}
+              className="w-full max-w-2xl lg:max-w-3xl h-auto object-contain"
             />
           </div>
         </div>

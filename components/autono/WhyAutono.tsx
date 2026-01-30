@@ -6,7 +6,7 @@ export function WhyAutono() {
   return (
     <section
       className="relative min-h-screen bg-cover bg-center bg-no-repeat bg-fixed"
-      style={{ backgroundImage: `url('/Assets/sec-6.png')` }}
+      style={{ backgroundImage: `url('/Assets/page1/page1-section4.jpg')` }}
     >
       {/* Content overlay */}
       <div className="relative z-10 min-h-screen flex items-center">
