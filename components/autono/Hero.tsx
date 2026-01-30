@@ -9,7 +9,7 @@ export function Hero() {
       {/* Background Image with Next.js optimization */}
       <Image
         src="/Assets/page1/page1-section1.jpg"
-        alt="Autonomous vehicle on road"
+        alt="Insurance technology"
         fill
         priority
         className="object-cover object-center"
@@ -23,12 +23,12 @@ export function Hero() {
       {/* Content - positioned in upper portion */}
       <div className="relative z-10 text-center px-6 pt-24 md:pt-28 lg:pt-32">
         <h1 className="text-5xl md:text-6xl lg:text-7xl font-normal text-gray-900 tracking-[0.08em] mb-10">
-          <span className="block mb-4">THE FUTURE OF</span>
-          <span className="block">MOBILITY IS HERE</span>
+          <span className="block mb-4">EXPLAINABLE</span>
+          <span className="block">INSURANCE DECISIONS</span>
         </h1>
 
         <p className="text-base md:text-lg text-gray-700 font-normal tracking-wide max-w-2xl mx-auto">
-          Discover the safest self-driving experience with Autono.
+          Automate claims and underwriting decisions with evidence-backed reasoning and audit-ready traceability.
         </p>
       </div>
     </section>

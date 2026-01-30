@@ -5,29 +5,29 @@ import { ArrowRight } from 'lucide-react'
 
 const jobs = [
   {
-    title: 'ELECTRICAL ENGINEER',
-    location: 'San Francisco, CA',
-    description: "I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click \"Edit Text\" or double click me to add your own content and make changes to the font.",
+    title: 'SENIOR ML ENGINEER',
+    location: 'Remote (US)',
+    description: "Build and optimize ML models for insurance document understanding, entity extraction, and decision reasoning. Work on production systems processing millions of claims.",
   },
   {
-    title: 'SOFTWARE ENGINEER',
-    location: 'New York, NY',
-    description: "Join our software team to build cutting-edge autonomous driving systems. You'll work on real-time processing, machine learning models, and vehicle control systems.",
+    title: 'INSURANCE DOMAIN EXPERT',
+    location: 'Remote (US)',
+    description: "Shape our insurance ontology and knowledge systems. Translate complex claims and underwriting workflows into structured rules and decision logic.",
   },
   {
-    title: 'MECHANICAL ENGINEER',
-    location: 'Detroit, MI',
-    description: "Design and develop mechanical components for our next-generation autonomous vehicles. Work with advanced materials and manufacturing processes.",
-  },
-  {
-    title: 'DATA SCIENTIST',
-    location: 'Austin, TX',
-    description: "Analyze vast amounts of driving data to improve our AI models. Develop insights that shape the future of autonomous transportation.",
+    title: 'FULL STACK ENGINEER',
+    location: 'Remote (US)',
+    description: "Build enterprise-grade applications that help adjusters and underwriters make better decisions. React, TypeScript, and modern cloud infrastructure.",
   },
   {
     title: 'PRODUCT MANAGER',
-    location: 'Seattle, WA',
-    description: "Lead product strategy for our autonomous vehicle platform. Collaborate with engineering, design, and business teams to deliver innovative solutions.",
+    location: 'Remote (US)',
+    description: "Define and deliver product capabilities that solve real problems for claims and underwriting teams. Work closely with customers and engineering.",
+  },
+  {
+    title: 'SOLUTIONS ARCHITECT',
+    location: 'Remote (US)',
+    description: "Design and implement integrations with leading insurance platforms. Help customers deploy IntelliHuman to transform their operations.",
   },
 ]
 
@@ -60,13 +60,13 @@ export function Careers() {
                 Careers
               </p>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-white leading-relaxed mb-16">
-                We're looking for
+                Join our team and help
                 <br />
-                innovative talent to join
+                transform how insurance
                 <br />
-                our team. See all positions
+                decisions are made.
                 <br />
-                and submit your CV.
+                See all positions.
               </h2>
               <button className="inline-flex items-center gap-3 px-6 py-3 border border-white/30 text-white font-light text-sm tracking-wide hover:border-white hover:bg-white hover:text-black transition-all duration-300 group">
                 Openings

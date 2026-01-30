@@ -15,9 +15,9 @@ export function Services() {
               Services
             </p>
             <h2 className="text-xl md:text-2xl lg:text-3xl font-light text-black leading-relaxed max-w-sm">
-              <span className="block mb-2">We Deliver Exceptional</span>
-              <span className="block mb-2">Products and Services</span>
-              <span className="block">Around the World</span>
+              <span className="block mb-2">Intelligent Automation</span>
+              <span className="block mb-2">for Insurance</span>
+              <span className="block">Operations</span>
             </h2>
           </div>
         </div>
@@ -27,12 +27,12 @@ export function Services() {
           {/* Left - Text Content - more indented than header */}
           <div className="lg:pl-36 xl:pl-44">
             <h3 className="text-4xl md:text-5xl lg:text-6xl font-light text-black leading-tight mb-8 tracking-wide">
-              AUTONOMOUS
+              CLAIMS
               <br />
-              DRIVING
+              DECISIONS
             </h3>
             <p className="text-black font-light leading-loose text-sm mb-10 max-w-sm">
-              I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click "Edit Text" or double click me to add your own content and make changes to the font. I'm a great place for you to tell a story and let your users know a little more about you.
+              Automate claim triage and coverage decisions with AI that reads documents, extracts key facts, and applies your rules—while keeping adjusters in control of complex cases.
             </p>
             <button className="inline-flex items-center gap-4 px-5 py-3 border border-gray-300 text-gray-600 font-light text-sm tracking-wide hover:border-gray-900 hover:text-black transition-all duration-300 group">
               Read More
@@ -47,7 +47,7 @@ export function Services() {
           <div className="relative flex items-center justify-center lg:justify-end py-10 lg:-mr-10">
             <Image
               src="/Assets/page1/page1-section3.jpg"
-              alt="Autonomous Driving Vehicle"
+              alt="Claims Decisions"
               width={900}
               height={720}
               className="w-full max-w-xl lg:max-w-2xl xl:max-w-3xl h-auto object-contain"
@@ -62,7 +62,7 @@ export function Services() {
           <div className="relative flex items-center justify-center lg:justify-start lg:ml-8">
             <Image
               src="/Assets/page1/page1-section3.jpg"
-              alt="Real-Time Information Dashboard"
+              alt="Underwriting Automation"
               width={900}
               height={650}
               className="w-full max-w-xl lg:max-w-2xl xl:max-w-3xl h-auto object-contain scale-105 lg:scale-110"
@@ -72,12 +72,12 @@ export function Services() {
           {/* Right - Text Content */}
           <div className="lg:pl-28 xl:pl-40">
             <h3 className="text-4xl md:text-5xl lg:text-6xl font-light text-black leading-tight mb-8 tracking-wide">
-              REAL-TIME
+              UNDERWRITING
               <br />
-              INFORMATION
+              AUTOMATION
             </h3>
             <p className="text-black font-light leading-loose text-sm mb-10 max-w-sm">
-              I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click "Edit Text" or double click me to add your own content and make changes to the font. I'm a great place for you to tell a story and let your users know a little more about you.
+              Accelerate submission-to-quote with intelligent data extraction, risk scoring, and recommendation generation. Your underwriters focus on judgment calls, not data entry.
             </p>
             <button className="inline-flex items-center gap-4 px-5 py-3 border border-gray-300 text-gray-600 font-light text-sm tracking-wide hover:border-gray-900 hover:text-black transition-all duration-300 group">
               Read More
@@ -94,12 +94,12 @@ export function Services() {
           {/* Left - Text Content */}
           <div className="lg:pl-36 xl:pl-44">
             <h3 className="text-4xl md:text-5xl lg:text-6xl font-light text-black leading-tight mb-8 tracking-wide">
-              PERCEPTION
+              FRAUD
               <br />
-              ENABLED
+              DETECTION
             </h3>
             <p className="text-black font-light leading-loose text-sm mb-10 max-w-sm">
-              I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click "Edit Text" or double click me to add your own content and make changes to the font. I'm a great place for you to tell a story and let your users know a little more about you.
+              Identify suspicious patterns with explainable AI that surfaces risk indicators and supporting evidence—giving your SIU team the insights they need to act quickly.
             </p>
             <button className="inline-flex items-center gap-4 px-5 py-3 border border-gray-300 text-gray-600 font-light text-sm tracking-wide hover:border-gray-900 hover:text-black transition-all duration-300 group">
               Read More
@@ -114,7 +114,7 @@ export function Services() {
           <div className="relative flex items-center justify-center lg:justify-end lg:-mr-10">
             <Image
               src="/Assets/page1/page1-section3.jpg"
-              alt="Perception Enabled Vehicle"
+              alt="Fraud Detection"
               width={900}
               height={720}
               className="w-full max-w-xl lg:max-w-2xl xl:max-w-3xl h-auto object-contain"

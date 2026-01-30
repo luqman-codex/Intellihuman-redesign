@@ -1,0 +1,932 @@
+﻿1) Project Goal
+Design a premium, enterprise-grade website for IntelliHuman that communicates:
+1. What we do (insurance decisioning AI for claims + underwriting + fraud)
+
+2. Why we’re different (ontology + 8-layer knowledge system + explainability)
+
+3. Why we’re safe to buy (auditability, governance, security, integrations)
+
+4. What to do next (Request Demo)
+
+Primary conversion: Request Demo
+________________
+
+
+2) Templates and Page Assignment (Final)
+Template 4 (Premium product story + conversion)
+   * Home /
+
+   * Product Overview /product
+
+   * Claims Decisioning /claims
+
+   * Underwriting Decisioning /underwriting
+
+   * Fraud & Risk Signals /fraud
+
+Template 3 (Technical proof + procurement clarity)
+      * How It Works /how-it-works
+
+      * Security & Compliance /security
+
+Template 1 (Recruiting)
+         * Careers /careers
+
+Optional later:
+            * Template 2 → About page
+
+________________
+
+
+3) Global Navigation (Header) Requirements
+Desktop Header
+Left: IntelliHuman logo (click → Home)
+Nav links (center):
+               * Product
+
+               * Claims
+
+               * Underwriting
+
+               * Fraud
+
+               * How It Works
+
+               * Security
+
+               * Careers
+
+Right:
+                  * Primary CTA button: Request Demo
+
+Optional:
+                     * Login (small text link)
+
+Header behavior
+                        * On hero: transparent background, white nav text
+
+                        * On scroll: solid white background, dark nav text, subtle border
+
+                        * Sticky: header stays fixed at top
+
+Mobile header behavior
+                           * Hamburger menu
+
+                           * Keep Request Demo button visible in header
+
+                           * Menu opens full-screen or dropdown with all links + Careers
+
+________________
+
+
+4) Global Footer Requirements
+Footer layout (4 columns)
+Column 1: Product
+                              * Product Overview
+
+                              * Claims Decisioning
+
+                              * Underwriting Decisioning
+
+                              * Fraud & Risk Signals
+
+Column 2: Platform
+                                 * How It Works
+
+                                 * Knowledge Layers
+
+                                 * Decision Trace
+
+Column 3: Trust
+                                    * Security & Compliance
+
+                                    * Auditability
+
+                                    * Data Handling
+
+Column 4: Company
+                                       * Careers
+
+                                       * Request Demo
+
+Bottom bar:
+                                          * Privacy Policy | Terms
+
+                                          * LinkedIn icon
+
+                                          * Copyright
+
+________________
+
+
+5) Visual Style Direction (Site-wide)
+Look and feel
+                                             * Enterprise, minimal, premium
+
+                                             * High whitespace, strong typography
+
+                                             * Avoid generic “AI brain” imagery
+
+                                             * Avoid consumer fintech styling
+
+Allowed visual types
+                                                * Product UI mockups (preferred)
+
+                                                * Workflow diagrams (simple, clean)
+
+                                                * Abstract background gradients / subtle network lines
+
+                                                * Iconography (minimal)
+
+Avoid
+                                                   * Stock photos of call centers
+
+                                                   * Robot imagery
+
+                                                   * Busy illustrations
+
+________________
+
+
+6) Core Reusable Components (Design System)
+These components should be designed once and reused.
+Component A: Cinematic Hero (Template 4)
+Purpose: quick clarity + premium feel
+Includes:
+                                                      * Eyebrow label
+
+                                                      * H1 headline
+
+                                                      * 1-line subhead (max 2 lines)
+
+                                                      * Primary CTA button
+
+                                                      * Secondary CTA link (optional)
+
+Background: abstract or blurred UI
+________________
+
+
+Component B: Dark Narrative Band (Template 4)
+Purpose: “why us” + credibility
+Left content:
+                                                         * Eyebrow
+
+                                                         * Headline
+
+                                                         * 2–3 sentence paragraph
+
+                                                         * 3 bullets max
+
+                                                         * Optional link CTA
+
+Right content: [UI MOCK] (Decision Trace card)
+________________
+
+
+Component C: Alternating Feature Block (Template 4)
+Purpose: explain a capability quickly
+Left or right content:
+                                                            * Title
+
+                                                            * 2-line description
+
+                                                            * 3 bullets max
+
+                                                            * Link CTA (Explore →)
+
+Opposite side: [UI MOCK] or [WORKFLOW DIAGRAM]
+________________
+
+
+Component D: Proof Quote Card
+Purpose: trust
+                                                               * Dark card on light background
+
+                                                               * Quote + attribution
+
+                                                               * Optional link CTA
+
+________________
+
+
+Component E: Metrics Strip
+Purpose: outcome framing
+                                                                  * 4 tiles max
+
+                                                                  * Short metric labels (no long text)
+
+________________
+
+
+Component F: Integrations Band
+Purpose: remove “will this integrate?” objection
+Includes:
+                                                                     * Eyebrow
+
+                                                                     * Headline
+
+                                                                     * 1 sentence
+
+                                                                     * Logo strip/grid
+
+                                                                     * 4 capability bullets
+
+                                                                     * Optional link CTA
+
+________________
+
+
+Component G: CTA Band
+Purpose: conversion
+                                                                        * Headline
+
+                                                                        * 1 sentence (optional)
+
+                                                                        * Button: Request Demo
+
+________________
+
+
+7) Required Product Visuals (Must Design)
+These 4 UI mockups are required and reused across pages:
+Visual 1: Decision Trace (Core differentiator) [UI MOCK]
+Must show:
+                                                                           * Input artifacts (policy, FNOL/submission, docs)
+
+                                                                           * Extracted entities (party, vehicle, loss cause, coverage)
+
+                                                                           * Triggered rules/signals
+
+                                                                           * Recommended action
+
+                                                                           * Confidence score
+
+                                                                           * Evidence links (3 items)
+
+________________
+
+
+Visual 2: Claims Triage + Routing [UI MOCK]
+Must show:
+                                                                              * Claim classification
+
+                                                                              * Priority / severity
+
+                                                                              * Routing recommendation (queue/team)
+
+                                                                              * Evidence highlights
+
+________________
+
+
+Visual 3: Underwriting Guideline Check [UI MOCK]
+Must show:
+                                                                                 * Submission summary
+
+                                                                                 * Guideline pass/fail checks
+
+                                                                                 * Referral recommendation + reason code
+
+                                                                                 * Evidence references
+
+________________
+
+
+Visual 4: Fraud Signals Dashboard [UI MOCK]
+Must show:
+                                                                                    * Risk summary
+
+                                                                                    * Top 3 signals
+
+                                                                                    * Evidence highlights
+
+                                                                                    * “Create SIU task” or next action
+
+________________
+
+
+8) Integrations (Duck Creek, Guidewire, Majesco) Requirements
+Logos required
+                                                                                       * Duck Creek
+
+                                                                                       * Guidewire
+
+                                                                                       * Majesco
+
+Optional:
+                                                                                          * Snowflake
+
+                                                                                          * Databricks
+
+                                                                                          * Salesforce
+
+Logo styling
+                                                                                             * Monochrome / single-color treatment
+
+                                                                                             * Consistent size
+
+                                                                                             * No clutter (max 6 logos per row desktop, wrap on mobile)
+
+Integration capability bullets (standard)
+Use these consistently where integrations appear:
+                                                                                                * Read/write claim and policy objects
+
+                                                                                                * Ingest attachments, notes, and forms
+
+                                                                                                * Route queues and create tasks
+
+                                                                                                * Export decisions and audit traces
+
+________________
+
+
+9) Page-by-Page Wireframes (Final)
+________________
+
+
+PAGE 1: HOME (Template 4)
+URL: /
+ Primary audience: all buyers
+Primary action: Request Demo
+Section 1: Cinematic Hero [CINEMATIC HERO]
+Eyebrow: INSURANCE DECISIONING AI
+H1: Explainable insurance decisions, in production.
+Subhead: Automate claims and underwriting decisions with evidence-backed reasoning and audit-ready traceability.
+CTAs: Request Demo | See How It Works →
+Background: abstract or blurred UI
+________________
+
+
+Section 2: Dark Narrative Band [DARK BAND + UI MOCK]
+Eyebrow: THE PLATFORM
+Headline: Decisions you can defend. Automation you can trust.
+Body: IntelliHuman turns policies, documents, and operational rules into consistent decisions across claims, underwriting, and fraud workflows.
+Bullets:
+                                                                                                   * Coverage-aware routing and triage
+
+                                                                                                   * Evidence-backed fraud and recovery signals
+
+                                                                                                   * Full decision trace for compliance and disputes
+Link CTA: Learn how it works →
+
+Right visual: Visual 1 (Decision Trace)
+________________
+
+
+Section 3: Positioning Break [TEXT + SMALL DIAGRAM]
+Eyebrow: DIFFERENTIATOR
+Headline: Not a chatbot. A decisioning layer.
+Body: Built on an insurance ontology and an 8-layer knowledge system for consistent, explainable outcomes.
+Optional mini diagram: Inputs → Ontology → Decision → Audit
+________________
+
+
+Section 4: Feature Block 1 (Claims) [ALT FEATURE + WORKFLOW DIAGRAM]
+Title: CLAIMS DECISIONING
+Copy: Automate triage, extraction, and routing while keeping every decision defensible.
+Bullets:
+                                                                                                      * FNOL classification + queue routing
+
+                                                                                                      * Document intake and key fact extraction
+
+                                                                                                      * Coverage-aware escalation and next actions
+CTA: Explore Claims →
+
+Visual: claims workflow diagram (FNOL → Extract → Reason → Route → Audit)
+________________
+
+
+Section 5: Feature Block 2 (Underwriting) [ALT FEATURE + UI MOCK]
+Title: UNDERWRITING DECISIONING
+Copy: Accelerate submissions, enforce guidelines, and route referrals with full reasoning trails.
+Bullets:
+                                                                                                         * Submission parsing across formats
+
+                                                                                                         * Guideline pass/fail + referral reasons
+
+                                                                                                         * Structured risk summary for underwriters
+CTA: Explore Underwriting →
+
+Visual: Visual 3 (Underwriting Guideline Check)
+________________
+
+
+Section 6: Feature Block 3 (Fraud) [ALT FEATURE + UI MOCK]
+Title: FRAUD & RISK SIGNALS
+Copy: Detect inconsistencies early with evidence-backed signals investigators can act on.
+Bullets:
+                                                                                                            * Inconsistency detection across documents
+
+                                                                                                            * Behavioral and timeline anomalies
+
+                                                                                                            * Relationship intelligence via ontology
+CTA: Explore Fraud →
+
+Visual: Visual 4 (Fraud Signals)
+________________
+
+
+Section 7: Proof Quote Card [QUOTE CARD]
+Quote + attribution (placeholder acceptable)
+________________
+
+
+Section 8: Metrics Strip [METRICS]
+4 tiles:
+                                                                                                               * Faster cycle time
+
+                                                                                                               * Higher straight-through processing
+
+                                                                                                               * Reduced leakage
+
+                                                                                                               * Audit-ready outcomes
+
+________________
+
+
+Section 9: Integrations Band [INTEGRATIONS BAND]
+Eyebrow: INTEGRATIONS
+Headline: Works with your insurance stack
+Body: API-first integration into claims and underwriting workflows without replacing core platforms.
+Logos: Duck Creek | Guidewire | Majesco (+ optional)
+Bullets: standard integration bullets
+Link CTA: View integration details →
+________________
+
+
+Section 10: Final CTA Band [CTA]
+Headline: See IntelliHuman on your workflows
+Button: Request Demo
+________________
+________________
+
+
+PAGE 2: PRODUCT OVERVIEW (Template 4)
+URL: /product
+ Primary audience: CIO/ops leadership
+Primary action: Request Demo
+Section 1: Hero [CINEMATIC HERO]
+H1: A decisioning platform built for insurance
+Subhead + CTA
+________________
+
+
+Section 2: Dark Narrative Band [DARK BAND + DIAGRAM]
+Headline: From documents to decisions, with traceability.
+Bullets:
+                                                                                                                  * Extraction
+
+                                                                                                                  * Ontology normalization
+
+                                                                                                                  * Decisioning + confidence
+
+                                                                                                                  * Governance controls
+
+                                                                                                                  * Audit trace export
+
+Right visual: platform stack diagram
+________________
+
+
+Section 3: Platform Modules [ALT FEATURE BLOCKS]
+4 blocks, alternating:
+                                                                                                                     1. Extraction Layer
+
+                                                                                                                     2. Ontology Layer (highlighted as key differentiator)
+
+                                                                                                                     3. Decisioning Engine
+
+                                                                                                                     4. Audit + Reporting
+
+Each block must include:
+                                                                                                                        * What it ingests
+
+                                                                                                                        * What it outputs
+
+                                                                                                                        * Why it matters
+
+________________
+
+
+Section 4: Output UI Grid [UI GRID]
+Cards:
+                                                                                                                           * Decision Summary
+
+                                                                                                                           * Evidence Panel
+
+                                                                                                                           * Extracted Entities
+
+                                                                                                                           * Workflow Routing
+
+                                                                                                                           * Audit Trace Export
+
+________________
+
+
+Section 5: Integrations (Detailed) [INTEGRATIONS + BULLETS]
+Two columns:
+                                                                                                                              * Core platforms (Duck Creek, Guidewire, Majesco)
+
+                                                                                                                              * Data + docs (warehouses, attachments, APIs)
+
+Include standard integration bullets.
+________________
+
+
+Section 6: CTA Band [CTA]
+Request Demo
+________________
+________________
+
+
+PAGE 3: CLAIMS (Template 4)
+URL: /claims
+ Primary audience: claims ops
+Primary action: Request Demo
+Section 1: Hero [CINEMATIC HERO]
+H1 + subhead + CTA
+________________
+
+
+Section 2: Dark Narrative Band [DARK BAND + UI MOCK]
+Headline: Reduce cycle time without losing control.
+Bullets:
+                                                                                                                                 * triage + routing
+
+                                                                                                                                 * extraction
+
+                                                                                                                                 * coverage reasoning
+
+                                                                                                                                 * audit trace
+
+Right visual: Visual 2 (Claims Triage)
+________________
+
+
+Section 3: Workflow Strip [WORKFLOW DIAGRAM]
+FNOL → Extract → Reason → Route → Resolve → Audit
+________________
+
+
+Section 4: Feature Block (Triage + Routing) [ALT FEATURE]
+                                                                                                                                    * Inputs
+
+                                                                                                                                    * Outputs
+
+                                                                                                                                    * Controls (thresholds, escalation)
+
+________________
+
+
+Section 5: Feature Block (Document Extraction) [ALT FEATURE]
+                                                                                                                                       * Inputs: estimates, reports, photos
+
+                                                                                                                                       * Outputs: structured facts + entities
+
+________________
+
+
+Section 6: Feature Block (Coverage Reasoning) [ALT FEATURE + UI MOCK]
+                                                                                                                                          * Ontology mapping of roles/perils/exclusions
+
+                                                                                                                                          * Evidence-backed decision trace
+
+Visual: Visual 1 (Decision Trace) reused
+________________
+
+
+Section 7: Integrations Band (Claims Systems) [INTEGRATIONS BAND]
+Logos: Duck Creek Claims | Guidewire ClaimCenter | Majesco
+Bullets: standard integration bullets
+________________
+
+
+Section 8: CTA Band [CTA]
+Request Demo
+________________
+________________
+
+
+PAGE 4: UNDERWRITING (Template 4)
+URL: /underwriting
+ Primary audience: underwriting leaders
+Primary action: Request Demo
+Section 1: Hero [CINEMATIC HERO]
+H1 + subhead + CTA
+________________
+
+
+Section 2: Dark Narrative Band [DARK BAND + UI MOCK]
+Headline: Standardize underwriting decisions across messy submissions.
+Bullets:
+                                                                                                                                             * extract risk factors
+
+                                                                                                                                             * guideline enforcement
+
+                                                                                                                                             * referral routing
+
+                                                                                                                                             * audit trace
+
+Right visual: Visual 3 (UW Guideline Check)
+________________
+
+
+Section 3: Workflow Strip [WORKFLOW DIAGRAM]
+Submission → Extract → Normalize → Evaluate → Refer/Bind → Audit
+________________
+
+
+Section 4: Feature Block (Submission Intake)
+Inputs + outputs + controls
+________________
+
+
+Section 5: Feature Block (Guideline Checks + Referrals)
+Pass/fail, reason codes, evidence links
+________________
+
+
+Section 6: Feature Block (Ontology Normalization)
+Entities, exposures, limits, endorsements
+________________
+
+
+Section 7: Integrations Band (PAS) [INTEGRATIONS BAND]
+Logos: Duck Creek Policy | Guidewire PolicyCenter | Majesco
+Bullets: standard integration bullets
+________________
+
+
+Section 8: CTA Band [CTA]
+Request Demo
+________________
+________________
+
+
+PAGE 5: FRAUD (Template 4)
+URL: /fraud
+ Primary audience: SIU + claims leadership
+Primary action: Request Demo
+Section 1: Hero [CINEMATIC HERO]
+H1 + subhead + CTA
+________________
+
+
+Section 2: Dark Narrative Band [DARK BAND + UI MOCK]
+Headline: Evidence-backed fraud signals investigators can act on.
+Bullets:
+                                                                                                                                                * inconsistency detection
+
+                                                                                                                                                * behavioral anomalies
+
+                                                                                                                                                * relationship intelligence
+
+Right visual: Visual 4 (Fraud Signals)
+________________
+
+
+Section 3: Signal Categories [3-COLUMN GRID]
+                                                                                                                                                   * Inconsistency
+
+                                                                                                                                                   * Behavioral
+
+                                                                                                                                                   * Relationship intelligence
+
+________________
+
+
+Section 4: Investigator Outputs [UI CARD GRID]
+                                                                                                                                                      * Risk summary
+
+                                                                                                                                                      * Evidence highlights
+
+                                                                                                                                                      * Next actions
+
+                                                                                                                                                      * Audit trace
+
+________________
+
+
+Section 5: Controls [TEXT + ICONS]
+Thresholds, feedback loop, escalation
+________________
+
+
+Section 6: Integrations Band [INTEGRATIONS BAND]
+Logos: Duck Creek | Guidewire | Majesco
+Bullets: standard integration bullets
+________________
+
+
+Section 7: CTA Band [CTA]
+Request Demo
+________________
+________________
+
+
+PAGE 6: HOW IT WORKS (Template 3)
+URL: /how-it-works
+ Primary audience: technical buyers + skeptics
+Primary action: Request Demo
+Section 1: Hero
+H1 + subhead + CTA
+________________
+
+
+Section 2: Knowledge by Layer [8-LAYER STACK VISUAL]
+Show all 8 layers with one-line explanations:
+                                                                                                                                                         1. Vertical / Industry Knowledge
+
+                                                                                                                                                         2. Vertical Dictionary / Ontology
+
+                                                                                                                                                         3. Vertical SME Knowledge
+
+                                                                                                                                                         4. Enterprise Documents
+
+                                                                                                                                                         5. Telemetry & System Logs
+
+                                                                                                                                                         6. Feedback & User Interactions
+
+                                                                                                                                                         7. Internet / Public Context
+
+                                                                                                                                                         8. Enterprise SME Knowledge
+
+________________
+
+
+Section 3: Architecture Stack [5-STEP DIAGRAM]
+Inputs → Extraction → Ontology → Decisioning → Outputs
+Each step gets 2 bullets.
+________________
+
+
+Section 4: Decision Trace Example [UI MOCK - REQUIRED]
+Use Visual 1 (Decision Trace) but expanded:
+                                                                                                                                                            * show evidence links
+
+                                                                                                                                                            * show triggered rule list
+
+                                                                                                                                                            * show override history
+
+________________
+
+
+Section 5: Human-in-the-loop Controls [WORKFLOW]
+Review queues, approvals, overrides, governance
+________________
+
+
+Section 6: Integration Architecture [DIAGRAM + LOGOS]
+                                                                                                                                                               * API-first
+
+                                                                                                                                                               * embedded UI option
+
+                                                                                                                                                               * batch + real-time
+
+                                                                                                                                                               * core platforms: Duck Creek/Guidewire/Majesco
+
+________________
+
+
+Section 7: CTA Band
+Request Demo
+________________
+________________
+
+
+PAGE 7: SECURITY (Template 3)
+URL: /security
+ Primary audience: procurement/security
+Primary action: Request Demo
+Section 1: Hero
+H1 + subhead + CTA
+________________
+
+
+Section 2: Security Foundations [GRID]
+Encryption, RBAC, tenant isolation, logging, retention
+________________
+
+
+Section 3: Auditability [TEXT + UI]
+                                                                                                                                                                  * evidence-linked decision trace
+
+                                                                                                                                                                  * override history
+
+                                                                                                                                                                  * exportable audit package
+
+________________
+
+
+Section 4: Governance Controls [GRID]
+Thresholds, approvals, monitoring, change management
+________________
+
+
+Section 5: Data Handling + Integrations [TEXT + LOGOS]
+                                                                                                                                                                     * minimal retention
+
+                                                                                                                                                                     * configurable storage
+
+                                                                                                                                                                     * integrates with Duck Creek/Guidewire/Majesco
+
+                                                                                                                                                                     * export audit logs
+
+________________
+
+
+Section 6: CTA Band
+Request Demo
+________________
+________________
+
+
+PAGE 8: CAREERS (Template 1)
+URL: /careers
+ Primary action: Apply
+Section 1: Hero
+H1 + CTA
+Section 2: Location
+Remote-first + hubs
+Section 3: Culture Band (dark)
+Mission + 3 bullets
+Section 4: Job Cards Grid
+Role cards with Apply
+Section 5: Resume Submission
+“Didn’t find a role?” form
+________________
+
+
+10) Mobile Layout Requirements (Important)
+All Template 4 pages must follow:
+                                                                                                                                                                        * Hero stays centered, CTAs stacked
+
+                                                                                                                                                                        * Dark narrative band becomes:
+
+                                                                                                                                                                           * text first
+
+                                                                                                                                                                           * UI mock second
+
+                                                                                                                                                                              * Feature blocks stack:
+
+                                                                                                                                                                                 * text above visual
+
+                                                                                                                                                                                    * Integrations logo strip becomes 2 rows
+
+                                                                                                                                                                                    * Metrics become 2x2 tiles
+
+Template 3 pages:
+                                                                                                                                                                                       * Architecture diagrams become vertical stacks
+
+                                                                                                                                                                                       * Knowledge layers become accordion or stacked cards (optional)
+
+________________
+
+
+11) Deliverables Requested from Designer
+Deliverable 1: Full-page desktop designs (8 pages)
+                                                                                                                                                                                          * Home
+
+                                                                                                                                                                                          * Product
+
+                                                                                                                                                                                          * Claims
+
+                                                                                                                                                                                          * Underwriting
+
+                                                                                                                                                                                          * Fraud
+
+                                                                                                                                                                                          * How It Works
+
+                                                                                                                                                                                          * Security
+
+                                                                                                                                                                                          * Careers
+
+Deliverable 2: Mobile designs (minimum)
+                                                                                                                                                                                             * Home
+
+                                                                                                                                                                                             * Claims
+
+                                                                                                                                                                                             * How It Works
+
+                                                                                                                                                                                             * Request Demo (if added)
+
+Deliverable 3: UI mockups (4)
+                                                                                                                                                                                                * Decision Trace
+
+                                                                                                                                                                                                * Claims Triage
+
+                                                                                                                                                                                                * Underwriting Guideline Check
+
+                                                                                                                                                                                                * Fraud Signals
+
+Deliverable 4: Component system
+                                                                                                                                                                                                   * buttons
+
+                                                                                                                                                                                                   * cards
+
+                                                                                                                                                                                                   * feature blocks
+
+                                                                                                                                                                                                   * integration strip
+
+                                                                                                                                                                                                   * typography styles

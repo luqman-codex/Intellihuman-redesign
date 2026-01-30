@@ -1,39 +1,27 @@
-import type { Metadata } from 'next'
-import Image from 'next/image'
 import { ArrowRight } from 'lucide-react'
 import { Navbar } from "@/components/autono/Navbar"
 import { Footer } from "@/components/autono/Footer"
 
-export const metadata: Metadata = {
-  title: 'Careers | AUTONO - Join Our Team',
-  description: 'Join Autono and help shape the future of autonomous mobility. Explore exciting career opportunities in engineering, AI, and more.',
-  openGraph: {
-    title: 'Careers | AUTONO - Join Our Team',
-    description: 'Join Autono and help shape the future of autonomous mobility.',
-    type: 'website',
-  },
-}
-
 const jobOpenings = [
   {
-    title: 'ELECTRICAL ENGINEER',
-    location: 'San Francisco, CA',
-    description: "I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click \"Edit Text\" or double click me to add your own content and make changes to the font.",
+    title: 'SENIOR ML ENGINEER',
+    location: 'Remote (US)',
+    description: "Build and optimize ML models for insurance document understanding, entity extraction, and decision reasoning. Work on production systems processing millions of claims.",
   },
   {
-    title: 'DATA SCIENTIST',
-    location: 'San Francisco, CA',
-    description: "I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click \"Edit Text\" or double click me to add your own content and make changes to the font. I'm a great place for you to tell a story and let your users know a little more about you.",
+    title: 'INSURANCE DOMAIN EXPERT',
+    location: 'Remote (US)',
+    description: "Shape our insurance ontology and knowledge systems. Translate complex claims and underwriting workflows into structured rules and decision logic.",
   },
   {
-    title: 'ARTIFICIAL INTELLIGENCE RESEARCHER',
-    location: 'San Francisco, CA',
-    description: "I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click \"Edit Text\" or double click me to add your own content and make changes to the font.",
+    title: 'FULL STACK ENGINEER',
+    location: 'Remote (US)',
+    description: "Build enterprise-grade applications that help adjusters and underwriters make better decisions. React, TypeScript, and modern cloud infrastructure.",
   },
   {
-    title: 'DEEP LEARNING ENGINEER',
-    location: 'San Francisco, CA',
-    description: "I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click \"Edit Text\" or double click me to add your own content and make changes to the font. I'm a great place for you to tell a story and let your users know a little more about you.",
+    title: 'PRODUCT MANAGER',
+    location: 'Remote (US)',
+    description: "Define and deliver product capabilities that solve real problems for claims and underwriting teams. Work closely with customers and engineering.",
   },
 ]
 
@@ -44,19 +32,28 @@ export default function CareersPage() {
       <Navbar variant="light" />
 
       {/* Hero Section */}
-      <section className="pt-32 sm:pt-40 md:pt-48 lg:pt-56 pb-16 sm:pb-20 md:pb-24 lg:pb-32 bg-white relative">
-        <div className="w-full px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-[32px] sm:text-[40px] md:text-[52px] lg:text-[64px] font-light text-black leading-[1.5] tracking-[0.1em] mb-6 sm:mb-8 md:mb-10">
-            WE MAKE
+      <section className="relative pt-32 sm:pt-40 md:pt-48 lg:pt-56 pb-16 sm:pb-20 md:pb-24 lg:pb-32 min-h-[70vh] flex items-center">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=2000&q=80"
+            alt="Careers background"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black/60" />
+        </div>
+        <div className="relative z-10 w-full px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-[32px] sm:text-[40px] md:text-[52px] lg:text-[64px] font-light text-white leading-[1.5] tracking-[0.1em] mb-6 sm:mb-8 md:mb-10">
+            BUILD THE FUTURE OF
             <br />
-            BIG IDEAS HAPPEN
+            INSURANCE DECISIONING
           </h1>
-          <p className="text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] font-light text-black leading-[1.8]">
-            Join Us for the Ride
+          <p className="text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] font-light text-white/80 leading-[1.8]">
+            Join Our Growing Team
           </p>
         </div>
         {/* Bottom border line */}
-        <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-black" />
+        <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-white z-10" />
       </section>
 
       {/* Location Section */}
@@ -73,25 +70,22 @@ export default function CareersPage() {
                   Location
                 </p>
                 <h2 className="text-[24px] font-light text-black leading-[1.8em] mb-8 sm:mb-10 md:mb-12">
-                  We're based in San
+                  Remote-first, with hubs
                   <br />
-                  Francisco's innovation hub
+                  where it matters
                 </h2>
                 <p className="text-[16px] text-black font-light leading-[1.8em] max-w-md">
-                  I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click "Edit Text" or double click me to add your own content and make changes to the font. I'm a great place for you to tell a story and let your users know a little more about you.
+                  We believe great work happens when talented people have flexibility. Our team works remotely across the US, with optional co-working in major metro areas for collaboration and team gatherings.
                 </p>
               </div>
             </div>
 
             {/* Building Image */}
             <div className="flex justify-center lg:justify-end">
-              <Image
+              <img
                 src="/Assets/careers/career-2.png"
-                alt="San Francisco Office Buildings"
-                width={700}
-                height={500}
+                alt="Office Buildings"
                 className="w-full max-w-lg lg:max-w-xl xl:max-w-2xl h-auto object-contain"
-                priority
               />
             </div>
           </div>
@@ -112,25 +106,23 @@ export default function CareersPage() {
                   Job Openings
                 </p>
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-light text-white leading-loose mb-12 italic">
-                  <span className="block mb-3">Changing the future of</span>
-                  <span className="block mb-3">transportation means</span>
+                  <span className="block mb-3">Transforming insurance</span>
+                  <span className="block mb-3">decisions means</span>
                   <span className="block">thinking differently.</span>
                 </h2>
                 <p className="text-white font-light leading-loose text-sm max-w-sm">
-                  I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click "Edit Text" or double click me to add your own content and make changes to the font. I'm a great place for you to tell a story and let your users know a little more about you.
+                  We're building AI that insurance companies can actually trust. Join a team that values evidence over opinion, customer obsession, and moving fast without compromising quality or security.
                 </p>
               </div>
             </div>
 
             {/* Right Side - Image */}
             <div className="relative h-[400px] lg:h-auto">
-              <Image
+              <img
                 src="/Assets/careers/career-3.png"
                 alt="Road with light trails"
-                fill
-                className="object-cover"
+                className="absolute inset-0 w-full h-full lg:h-[760px] object-cover"
                 style={{ objectPosition: '50% 50%' }}
-                sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
           </div>
@@ -174,14 +166,14 @@ export default function CareersPage() {
               style={{ maxWidth: '420px' }}
             >
               <p className="text-black font-light leading-loose text-base lg:text-lg">
-                Didn't find the position
+                Don't see the right role?
                 <br />
-                you're looking for?
+                We're always looking for
                 <br />
-                Send us your CV
+                exceptional people.
               </p>
               <button className="inline-flex items-center gap-2 px-5 py-2.5 border border-black/30 text-black font-light text-sm tracking-wide hover:border-black hover:bg-black hover:text-white transition-all duration-300 group w-fit rounded-md mt-6">
-                Submit
+                Submit Your CV
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
               </button>
             </div>

@@ -17,12 +17,12 @@ export function Vision() {
                 Vision
               </p>
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-light text-white leading-loose mb-12">
-                <span className="block mb-3">We're Changing the</span>
-                <span className="block mb-3">Way the World Thinks</span>
-                <span className="block">About Cars</span>
+                <span className="block mb-3">We're Changing How</span>
+                <span className="block mb-3">Insurance Companies</span>
+                <span className="block">Make Decisions</span>
               </h2>
               <p className="text-white font-light leading-loose text-sm max-w-sm">
-                I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click "Edit Text" or double click me to add your own content and make changes to the font. I'm a great place for you to tell a story and let your users know a little more about you.
+                IntelliHuman combines AI precision with human judgment to deliver insurance decisions that are faster, more consistent, and fully defensible. Every recommendation comes with clear evidence and reasoning you can trust.
               </p>
             </div>
           </div>
@@ -31,7 +31,7 @@ export function Vision() {
           <div className="relative flex justify-center lg:justify-end">
             <Image
               src="/Assets/page1/page1-section2.jpg"
-              alt="Autonomous Vehicle Vision"
+              alt="AI Insurance Vision"
               width={1000}
               height={850}
               className="w-full max-w-2xl lg:max-w-3xl h-auto object-contain"

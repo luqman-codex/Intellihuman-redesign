@@ -33,7 +33,7 @@ export function Partners() {
 
             <div className="pl-6">
               <p className="text-white/60 text-xs font-light tracking-[0.3em] mb-10 uppercase">
-                Industry
+                Integrations
               </p>
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-white leading-loose mb-20">
                 Our
@@ -41,7 +41,7 @@ export function Partners() {
                 Partners
               </h2>
               <p className="text-white font-light leading-loose text-base max-w-md">
-                Click here to add your own content and customize the text. This is a great place to tell a story about your company and let your users know a little more about the company's history, the team's background, or any other information you'd like to share. Just click "Edit Text" to get started.
+                IntelliHuman integrates seamlessly with leading insurance platforms. Our partnerships with industry leaders ensure smooth deployment and powerful workflows that enhance your existing systems.
               </p>
             </div>
           </div>

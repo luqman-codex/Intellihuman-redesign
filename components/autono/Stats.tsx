@@ -4,10 +4,10 @@ import Image from 'next/image'
 import { useEffect, useState, useRef } from 'react'
 
 const stats = [
-  { value: 200, label: 'EMPLOYEES', suffix: '' },
-  { value: 5, label: 'CORE TEAMS', suffix: '' },
-  { value: 200, label: 'CAPITAL', suffix: 'M$', prefixSuffix: true },
-  { value: 326, label: 'PARTNERS', suffix: '' },
+  { value: 95, label: 'ACCURACY', suffix: '%', prefixSuffix: true },
+  { value: 60, label: 'FASTER DECISIONS', suffix: '%', prefixSuffix: true },
+  { value: 100, label: 'AUDIT READY', suffix: '%', prefixSuffix: true },
+  { value: 40, label: 'COST REDUCTION', suffix: '%', prefixSuffix: true },
 ]
 
 const AnimatedNumber = ({ value, suffix, prefixSuffix }: { value: number; suffix: string; prefixSuffix?: boolean }) => {
@@ -80,7 +80,7 @@ export function Stats() {
           {/* Stats Content */}
           <div className="px-6 lg:px-12">
             <h2 className="text-3xl md:text-4xl font-light text-black mb-16">
-              Autono In Numbers
+              IntelliHuman In Numbers
             </h2>
 
             {/* Stats Grid */}

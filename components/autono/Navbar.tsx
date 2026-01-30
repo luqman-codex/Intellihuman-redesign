@@ -22,8 +22,12 @@ export function Navbar({ variant = 'light' }: NavbarProps) {
   }, [])
 
   const navLinks = [
-    { name: 'Technology', href: '/technology' },
-    { name: 'About', href: '/about' },
+    { name: 'Product', href: '/product' },
+    { name: 'Claims', href: '/claims' },
+    { name: 'Underwriting', href: '/underwriting' },
+    { name: 'Fraud', href: '/fraud' },
+    { name: 'How It Works', href: '/how-it-works' },
+    { name: 'Security', href: '/security' },
     { name: 'Careers', href: '/careers' },
   ]
 
@@ -41,7 +45,7 @@ export function Navbar({ variant = 'light' }: NavbarProps) {
       <div className="w-full px-4 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo - top left */}
-          <Link href="/" className="flex items-center bg-gray-900 px-3 py-1.5 rounded">
+          <Link href="/" className="flex items-center">
             <Image
               src="/logo.png"
               alt="IntelliHuman Logo"
@@ -57,8 +61,8 @@ export function Navbar({ variant = 'light' }: NavbarProps) {
               <Link
                 key={link.name}
                 href={link.href}
-                className={`text-base font-medium tracking-wide transition-colors duration-300 ${
-                  isLight
+                className={`text-sm font-medium tracking-wide transition-colors duration-300 ${
+                  showDarkBg
                     ? 'text-gray-800 hover:text-gray-900'
                     : 'text-white/90 hover:text-white'
                 }`}
@@ -66,20 +70,21 @@ export function Navbar({ variant = 'light' }: NavbarProps) {
                 {link.name}
               </Link>
             ))}
-            <button
+            <Link
+              href="/demo"
               className={`px-6 py-2.5 text-base font-medium tracking-wide border transition-all duration-300 ${
-                isLight
+                showDarkBg
                   ? 'border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white'
                   : 'border-white text-white hover:bg-white hover:text-gray-900'
               }`}
             >
-              Subscribe
-            </button>
+              Request Demo
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
           <button
-            className={`md:hidden p-2 ${isLight ? 'text-gray-900' : 'text-white'}`}
+            className={`md:hidden p-2 ${showDarkBg ? 'text-gray-900' : 'text-white'}`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -105,11 +110,12 @@ export function Navbar({ variant = 'light' }: NavbarProps) {
               {link.name}
             </Link>
           ))}
-          <button
-            className="w-full px-6 py-2 text-sm font-light tracking-wide border border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white transition-all duration-300"
+          <Link
+            href="/demo"
+            className="block w-full px-6 py-2 text-sm font-light tracking-wide border border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white transition-all duration-300 text-center"
           >
-            Subscribe
-          </button>
+            Request Demo
+          </Link>
         </div>
       </div>
     </nav>
